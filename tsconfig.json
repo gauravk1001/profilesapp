@@ -8,11 +8,14 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
-      "$amplify/*": [
-        "../.amplify/generated/*"
-      ]
+      "@/*": ["./*"]
     }
   },
-  "exclude": ["node_modules", "amplify/**/*"]
+  "exclude": ["node_modules", ".amplify", "./amplify"]
 }
